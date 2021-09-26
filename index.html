@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello, Antonio</h1>
+    <canvas width="600" height="600"></canvas>
+
+
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+        
+        context.fillStyle = 'blue';
+        //context.fillRect(100, 100, 400, 400);
+
+        //diciamo che vogliamo iniziare un nuovo elemento
+
+        context.lineWidth = 4;
+        context.beginPath();
+        context.rect(100, 100, 400, 400);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(300, 300, 100, 0, Math.PI * 2);
+        context.stroke();
+
+
+
+
+        let x = 4;
+        let year = 2042;
+        let nextYea = year + 1;
+
+        let dinner = 'salad';
+        let swntence = ' Tonight, dinner will be ' + dinner;
+
+        // function saySomething(param) {
+        //     console.log('hello')
+        // }
+        // saySomething(sentence  );
+        function add(a, b) {
+            return a + b;
+
+        }
+        let result = add(5, 7);
+        console.log(result);
+
+        let multiply = (a, b) => {
+            return a * b;
+        }
+        console.log(multiply(5, 7));
+    </script>
+</body>
+
+</html>
